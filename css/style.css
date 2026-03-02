@@ -1,70 +1,79 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f1f5f9;
-  color: #1e293b;
+  font-family: 'Inter', sans-serif;
+  background: #f9fafc;
+  color: #333;
+  margin: 0;
 }
 
 /* NAVBAR */
 .navbar {
-  background: white !important;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-}
-
-.navbar-brand {
-  font-weight: bold;
-  color: #1e3a8a !important;
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
 }
 
 .nav-link {
-  color: #475569 !important;
   font-weight: 500;
 }
 
-.nav-link:hover {
-  color: #7c3aed !important;
-}
-
-/* HERO SECTION */
-.hero-section {
-  padding: 120px 20px;
-  text-align: center;
-  background: linear-gradient(135deg, #1e3a8a, #7c3aed);
+/* HERO */
+.hero {
+  padding: 140px 20px 80px;
+  background: linear-gradient(135deg, #6366f1, #ec4899);
   color: white;
 }
 
-.hero-section h1 {
+.hero h1 {
   font-size: 44px;
   font-weight: 700;
-  margin-bottom: 20px;
 }
 
-.hero-section p {
+.hero p {
   font-size: 18px;
-  margin-bottom: 30px;
-  opacity: 0.9;
+  margin-bottom: 25px;
+}
+
+.hero-img {
+  max-width: 700px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
 }
 
 /* BUTTONS */
-.btn-primary {
+.btn-main {
   background: white;
-  color: #1e3a8a;
+  color: #6366f1;
   border-radius: 30px;
   padding: 10px 30px;
-  border: none;
   font-weight: 600;
 }
 
-.btn-primary:hover {
-  background: #e2e8f0;
-  color: #7c3aed;
+.btn-outline-main {
+  border: 2px solid #6366f1;
+  color: #6366f1;
+  border-radius: 30px;
+  padding: 8px 25px;
 }
 
-/* PRICING SECTION */
+/* FEATURE CARDS */
+.feature-card {
+  background: white;
+  padding: 40px 25px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+/* PRICING */
 .price-card {
   background: white;
   padding: 40px 30px;
   border-radius: 20px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.05);
   transition: 0.3s;
 }
 
@@ -75,14 +84,19 @@ body {
 .price-card h3 {
   font-size: 32px;
   margin: 20px 0;
-  color: #1e3a8a;
 }
 
-.price-card h3 span {
-  font-size: 16px;
-  color: #64748b;
+.price-card span {
+  font-size: 14px;
+  color: #777;
 }
 
 .featured {
-  border: 2px solid #7c3aed;
+  border: 2px solid #6366f1;
+}
+
+/* FOOTER */
+footer {
+  background: #111827;
+  color: white;
 }
