@@ -6,7 +6,7 @@
 }
 
 body {
-    background: linear-gradient(135deg, #dbeafe, #fce7f3);
+    background: linear-gradient(120deg, #e0f2fe, #f3e8ff);
     color: #333;
 }
 
@@ -15,12 +15,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 8%;
-    background: rgba(255,255,255,0.7);
+    padding: 18px 8%;
+    background: rgba(255,255,255,0.6);
 }
 
 .logo {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     color: #6b21a8;
 }
@@ -36,21 +36,21 @@ nav a:hover {
     color: #7c3aed;
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
     text-align: center;
     padding: 100px 20px;
 }
 
 .hero h1 {
-    font-size: 38px;
+    font-size: 36px;
     color: #4c1d95;
     margin-bottom: 15px;
 }
 
 .hero p {
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 button {
@@ -58,7 +58,7 @@ button {
     border: none;
     background: #a78bfa;
     color: white;
-    border-radius: 20px;
+    border-radius: 25px;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -67,43 +67,35 @@ button:hover {
     background: #7c3aed;
 }
 
-/* Services */
-.services {
+/* Features */
+.features {
     text-align: center;
     padding: 60px 20px;
 }
 
-.cards {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 30px;
-}
-
-.card {
+.feature-box {
     background: white;
-    width: 250px;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    width: 260px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     transition: 0.3s;
 }
 
-.card:hover {
-    transform: translateY(-8px);
+.feature-box:hover {
+    transform: translateY(-5px);
 }
 
-.card img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 10px;
+.feature-box i {
+    font-size: 28px;
+    color: #7c3aed;
+    margin-bottom: 15px;
 }
 
-/* Footer */
 footer {
     text-align: center;
-    padding: 15px;
+    padding: 20px;
     background: #ede9fe;
     margin-top: 40px;
-}
+    }
