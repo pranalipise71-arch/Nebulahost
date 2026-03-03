@@ -90,6 +90,41 @@ header nav a{
 .split{
   display:flex;
   flex-wrap:wrap;
+}/* ===== MOBILE FIX ===== */
+
+@media(max-width:768px){
+
+  .services{
+    flex-direction:column;
+    margin-top:20px;
+  }
+
+  .card{
+    width:100%;
+    margin-bottom:20px;
+  }
+
+  .split{
+    flex-direction:column;
+  }
+
+  .split-text{
+    padding:40px 8%;
+  }
+
+  header{
+    position:relative;
+  }
+
+  .hero{
+    height:70vh;
+    padding-left:5%;
+  }
+
+  .hero h1{
+    font-size:28px;
+  }
+
 }
 
 .split-text{
