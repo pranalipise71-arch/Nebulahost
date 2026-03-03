@@ -2,104 +2,117 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family: 'Segoe UI', sans-serif;
+  font-family:Arial, sans-serif;
 }
-
-body{
-  background: linear-gradient(135deg, #0f172a, #1e293b);
-  color:white;
-}
-
-/* Header */
 
 header{
+  position:absolute;
+  width:100%;
   display:flex;
   justify-content:space-between;
-  align-items:center;
   padding:20px 8%;
+  color:white;
+  z-index:10;
+}
+
+header nav a{
+  margin-left:25px;
+  text-decoration:none;
+  color:white;
+  font-weight:500;
+}
+
+.hero{
+  height:90vh;
+  background: url('https://images.unsplash.com/photo-1581091870627-3c0d5bdf6a36') no-repeat center/cover;
+  display:flex;
+  align-items:center;
+  padding-left:8%;
+  color:white;
   position:relative;
 }
 
-.logo{
-  font-size:24px;
-  font-weight:bold;
-  background: linear-gradient(45deg, #8b5cf6, #ec4899);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* Hamburger */
-
-.menu-toggle{
-  display:flex;
-  flex-direction:column;
-  cursor:pointer;
-  gap:5px;
-}
-
-.menu-toggle div{
-  width:25px;
-  height:3px;
-  background:white;
-  border-radius:5px;
-}
-
-/* Navigation */
-
-nav{
+.hero::after{
+  content:"";
   position:absolute;
-  top:80px;
-  right:8%;
-  background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(10px);
-  border-radius:15px;
-  display:none;
-  flex-direction:column;
-  padding:20px;
-  width:200px;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.6);
 }
 
-nav a{
-  text-decoration:none;
-  color:#cbd5e1;
-  padding:10px 0;
-  transition:0.3s;
-}
-
-nav a:hover{
-  color:#ec4899;
-}
-
-nav.active{
-  display:flex;
-}
-
-/* Hero */
-
-.hero{
-  text-align:center;
-  padding:100px 10%;
+.hero-content{
+  position:relative;
+  z-index:2;
 }
 
 .hero h1{
-  font-size:30px;
-  background: linear-gradient(45deg, #8b5cf6, #ec4899);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size:48px;
 }
 
-.hero p{
-  margin-top:20px;
-  color:#cbd5e1;
+.services{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  margin-top:-80px;
+  padding:0 8%;
 }
 
-.main-btn{
-  margin-top:30px;
-  padding:12px 35px;
-  border:none;
-  border-radius:30px;
-  background: linear-gradient(45deg, #8b5cf6, #ec4899);
+.card{
+  background:white;
+  padding:30px;
+  width:300px;
+  box-shadow:0 10px 20px rgba(0,0,0,0.2);
+  text-align:center;
+}
+
+.card button{
+  margin-top:15px;
+  padding:8px 20px;
+  background:#0d3b66;
   color:white;
-  font-weight:bold;
-  cursor:pointer;
+  border:none;
+}
+
+.offer{
+  padding:80px 8%;
+  text-align:center;
+}
+
+.offer-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:40px;
+  margin-top:40px;
+}
+
+.split{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.split-text{
+  flex:1;
+  padding:60px 8%;
+  background:#0d3b66;
+  color:white;
+}
+
+.split-image{
+  flex:1;
+  background:url('https://images.unsplash.com/photo-1518770660439-4636190af475') no-repeat center/cover;
+  min-height:300px;
+}
+
+footer{
+  background:#111;
+  color:white;
+  padding:50px 8%;
+}
+
+.footer-content{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
 }
