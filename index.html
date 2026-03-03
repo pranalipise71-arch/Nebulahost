@@ -9,46 +9,41 @@
 <body>
 
 <header>
-    <div class="logo">NebulaHost</div>
-    <nav>
-        <a href="#">Hosting</a>
-        <a href="#">Domains</a>
-        <a href="#">Pricing</a>
-        <a href="#">Support</a>
-    </nav>
-    <button class="nav-btn">Get Started</button>
+  <div class="logo">NebulaHost</div>
+
+  <!-- Hamburger -->
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav id="navMenu">
+    <a href="#">Home</a>
+    <a href="#">Hosting</a>
+    <a href="#">Domains</a>
+    <a href="#">Pricing</a>
+    <a href="#">About Us</a>
+    <a href="#">Contact</a>
+    <a href="#">Blog</a>
+    <a href="#">Support</a>
+    <a href="#">FAQ</a>
+    <a href="#">Login</a>
+  </nav>
 </header>
 
 <section class="hero">
-    <div class="hero-text">
-        <h1>FULL SPEED.<br>REAL POWER.<br>UNSTOPPABLE PERFORMANCE.</h1>
-        <p>Premium cloud hosting designed for creators, startups and growing businesses.</p>
-        <button class="main-btn">Explore Plans →</button>
-    </div>
-
-    <div class="hero-image">
-        <img src="https://images.unsplash.com/photo-1581092918484-8313f9c2c4c9" alt="server">
-    </div>
+  <h1>FULL SPEED. REAL POWER. UNSTOPPABLE PERFORMANCE.</h1>
+  <p>Premium cloud hosting designed for creators and businesses.</p>
+  <button class="main-btn">Explore Plans →</button>
 </section>
 
-<section class="stats">
-    <div>
-        <h2>99.9%</h2>
-        <p>Uptime Guarantee</p>
-    </div>
-    <div>
-        <h2>24/7</h2>
-        <p>Expert Support</p>
-    </div>
-    <div>
-        <h2>50K+</h2>
-        <p>Websites Hosted</p>
-    </div>
-</section>
-
-<footer>
-    © 2026 NebulaHost | Premium Hosting Solutions
-</footer>
+<script>
+function toggleMenu() {
+  document.getElementById("navMenu").classList.toggle("active");
+}
+</script>
 
 </body>
 </html>
